@@ -1,6 +1,7 @@
 .vscode
 client/node/node_modules
 client/node_modules
+client/dist
 ### Eclipse ###
 *.pydevproject
 .metadata
