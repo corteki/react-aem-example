@@ -1,0 +1,9 @@
+@import "base/skin";
+@import "base/structure";
+@import "variants/Button.variants";
+
+.button {
+    @include Skin;
+    @include Structure;
+    @include Variants;
+}

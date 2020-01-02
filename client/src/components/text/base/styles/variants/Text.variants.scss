@@ -1,0 +1,7 @@
+@import "skins";
+
+@mixin Variants {
+    &--body {
+        @include BodySkin;
+    }
+}

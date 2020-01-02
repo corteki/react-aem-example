@@ -1,0 +1,16 @@
+@mixin PrimarySkin {
+    font-size: 3em;
+    line-height: 1.05em;
+}
+@mixin SecondarySkin {
+    font-size: 2.25em;
+    line-height: 1.25em;
+}
+@mixin TertiarySkin {
+    font-size: 1.75em;
+    line-height: 1.25em;
+}
+@mixin QuarternarySkin {
+    font-size: 1.125em;
+    line-height: 1.22222222em;
+}

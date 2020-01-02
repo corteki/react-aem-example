@@ -1,0 +1,9 @@
+@import "base/skin";
+@import "base/structure";
+@import "variants/Text.variants";
+
+.text {
+    @include Skin;
+    @include Structure;
+    @include Variants;
+}
