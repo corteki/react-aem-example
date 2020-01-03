@@ -6,6 +6,7 @@ import { ComponentResources } from "../ComponentResources";
 @Resource(ComponentResources.Container, undefined, true)
 export class Container extends ResponsiveGrid {
     render() {
+        console.log(this.props)
         return (
             <div className={`${(super.containerProps.className || '')}  ${this.props.gridClassNames}`}>
                 { super.childComponents }
