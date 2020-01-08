@@ -1,8 +1,8 @@
-import React, {Component} from "react";
+import React, {PureComponent} from "react";
 import { HeadingProperties } from "./Heading.properties";
 import "./styles/Heading.styles.scss";
 
-export class HeadingBase extends Component<HeadingProperties> {
+export class HeadingBase extends PureComponent<HeadingProperties> {
     render() {
         const {variant, label} = this.props;
         return (

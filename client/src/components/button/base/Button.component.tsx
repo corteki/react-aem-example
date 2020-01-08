@@ -1,8 +1,8 @@
-import React, {Component} from "react";
+import React, {PureComponent} from "react";
 import { ButtonProperties } from "./Button.properties";
 import "./styles/Button.styles.scss";
 
-export class ButtonBase extends Component<ButtonProperties> {
+export class ButtonBase extends PureComponent<ButtonProperties> {
 
     handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
         const {onClick} = this.props;

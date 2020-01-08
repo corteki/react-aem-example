@@ -1,10 +1,10 @@
-import React, {Component} from "react";
+import React, {PureComponent} from "react";
 import { ComponentResources } from "../ComponentResources";
 import { ContainerProperties } from "./Container.properties";
 import { ResponsiveGrid } from "../../annotations/resource/ResponsiveGrid";
 
 @ResponsiveGrid(ComponentResources.GridContainer)
-export class Container extends Component<ContainerProperties> {
+export class Container extends PureComponent<ContainerProperties> {
     render() {
         const {className, children, columnAmount, rowAmount} = this.props;
         return (
