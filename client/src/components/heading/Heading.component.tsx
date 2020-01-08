@@ -1,7 +1,7 @@
 import React, {PureComponent} from "react";
 import { HeadingProperties } from "./base/Heading.properties";
 import { HeadingBase } from "./base/Heading.component";
-import { Editable } from "../../annotations/resource/EditableComponent";
+import { Editable } from "../../annotations/resource/Editable";
 import { ComponentResources } from "../ComponentResources";
 import { HeadingConfiguration } from "./Heading.configuration";
 

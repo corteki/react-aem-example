@@ -1,5 +1,5 @@
 import React, { PureComponent } from "react";
-import { Editable } from "../../annotations/resource/EditableComponent";
+import { Editable } from "../../annotations/resource/Editable";
 import { ComponentResources } from "../ComponentResources";
 import { ImageProperties } from "./Image.properties";
 import { ImageConfiguration } from "./Image.Configuration";

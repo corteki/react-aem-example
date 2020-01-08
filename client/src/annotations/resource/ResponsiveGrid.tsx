@@ -1,6 +1,6 @@
 import React from "react";
 import { ResponsiveGrid as AemResponsiveGrid } from "@adobe/cq-react-editable-components";
-import { Editable } from "./EditableComponent";
+import { Editable } from "./Editable";
 import { ComponentResources } from "src/components/ComponentResources";
 
 export function ResponsiveGrid(resource: ComponentResources) {
