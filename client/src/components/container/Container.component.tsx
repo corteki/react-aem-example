@@ -1,24 +1,21 @@
-import React from "react";
-import { ResponsiveGrid } from "@adobe/cq-react-editable-components";
-import { Resource } from "../../annotations/resource/Resource";
+import React, {Component} from "react";
 import { ComponentResources } from "../ComponentResources";
 import { ContainerProperties } from "./Container.properties";
+import { ResponsiveGrid } from "../../annotations/resource/ResponsiveGrid";
 
-@Resource(ComponentResources.Container, undefined, true)
-export class Container extends ResponsiveGrid {
-    
+@ResponsiveGrid(ComponentResources.GridContainer)
+export class Container extends Component<ContainerProperties> {
     render() {
-        const {gridClassNames, columnAmount, rowAmount} = this.props as ContainerProperties
+        const {className, children, columnAmount, rowAmount} = this.props;
         return (
-            <div className={`${(super.containerProps.className || '')}  ${gridClassNames}`}>
+            <div className={className}>
                 <div style={{
                     display: 'grid',
                     gridTemplateColumns: `repeat(${columnAmount}, 1fr)`,
                     gridTemplateRows: `repeat(${rowAmount}, 1fr)`,
                 }}>
-                    { super.childComponents }
+                    { children }
                 </div>
-                { super.placeholderComponent }
             </div>
         )
     }

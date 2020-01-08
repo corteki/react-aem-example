@@ -1,15 +1,15 @@
-import React from 'react';
-import { Page, withModel } from "@adobe/cq-react-editable-components";
+import React, {Component} from 'react';
+import { Module } from '../annotations/resource/Module';
+import { AppProperties } from './App.properties';
 
-class App extends Page {
+@Module()
+export class App extends Component<AppProperties> {
     render() {
+        const {children} = this.props;
         return (
             <section>
-                { this.childComponents && this.childComponents }
-                { this.childPages && this.childPages }
+                { children }
             </section>
         )
     }
 }
-
-export default withModel(App)

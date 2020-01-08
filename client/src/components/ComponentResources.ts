@@ -4,5 +4,5 @@ export enum ComponentResources {
     Text = 'react-typescript-demo/components/text',
     Cart = 'react-typescript-demo/components/cart',
     Image = 'react-typescript-demo/components/image',
-    Container = 'react-typescript-demo/components/container',
+    GridContainer = 'react-typescript-demo/components/grid-container',
 }

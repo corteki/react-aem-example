@@ -3,4 +3,8 @@ export interface ContainerProperties {
     rowAmount: string;
     gridClassNames: string;
     cssClass: string;
+    className: string;
+    containerProps: {
+        className: string
+    };
 }

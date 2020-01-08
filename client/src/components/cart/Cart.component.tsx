@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import {ResponsiveGrid} from '@adobe/cq-react-editable-components';
-import { Resource } from '../../annotations/resource/Resource';
+import { Editable } from '../../annotations/resource/EditableComponent';
 import { ComponentResources } from '../ComponentResources';
 // import { CartConfiguration } from './Cart.configuration';
 // import { CartProperties } from './Cart.properties';
 // import { ButtonBase } from '../button/base/Button.component';
 
 
-@Resource(ComponentResources.Cart, undefined, true)
+@Editable(ComponentResources.Cart, undefined, true)
 export class Cart extends ResponsiveGrid {
 
     get containerProps() {

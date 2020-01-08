@@ -18,15 +18,17 @@ import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
 @Model(
     adaptables = SlingHttpServletRequest.class, 
     adapters = { ComponentExporter.class }, 
-    resourceType = { ContainerModel.RESOURCE_TYPE }
+    resourceType = { GridContainerModel.RESOURCE_TYPE }
 )
 @Exporter(
     name = ExporterConstants.SLING_MODEL_EXPORTER_NAME, 
     extensions = ExporterConstants.SLING_MODEL_EXTENSION
 )
-@JsonSerialize(as = ContainerModel.class)
-public class ContainerModel extends ResponsiveGrid implements ComponentExporter {
-    static final String RESOURCE_TYPE = "react-typescript-demo/components/container";
+@JsonSerialize(as = GridContainerModel.class)
+public class GridContainerModel extends ResponsiveGrid implements ComponentExporter {
+
+    static final String RESOURCE_TYPE = "react-typescript-demo/components/grid-container";
+    
     private final String DEFAULT_AMOUNT = "1";
 
     @ValueMapValue

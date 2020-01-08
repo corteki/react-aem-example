@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-import { Resource } from "../../annotations/resource/Resource";
+import { Editable } from "../../annotations/resource/EditableComponent";
 import { ComponentResources } from "../ComponentResources";
 import { ImageProperties } from "./Image.properties";
 import { ImageConfiguration } from "./Image.Configuration";
 import "./styles/Image.styles.scss";
 
-@Resource(ComponentResources.Image, ImageConfiguration)
+@Editable(ComponentResources.Image, ImageConfiguration)
 export class Image extends Component<ImageProperties> {
     render() {
         const {src, alt, title} = this.props;

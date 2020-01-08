@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from "./components/App.component";
+import {App} from "./components/App.component";
 import { ModelManager, Constants } from "@adobe/cq-spa-page-model-manager";
 import {BrowserRouter} from 'react-router-dom';
 import "./shared/styles/Reset.scss";

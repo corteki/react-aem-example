@@ -3,9 +3,9 @@ import { ButtonBase } from "./base/Button.component";
 import { ButtonProperties } from "./base/Button.properties";
 import { ComponentResources } from "../ComponentResources";
 import { ButtonConfiguration } from "./Button.configuration";
-import { Resource } from "../../annotations/resource/Resource";
+import { Editable } from "../../annotations/resource/EditableComponent";
 
-@Resource(ComponentResources.Button, ButtonConfiguration)
+@Editable(ComponentResources.Button, ButtonConfiguration)
 export class Button extends Component<ButtonProperties> {
 
     handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
