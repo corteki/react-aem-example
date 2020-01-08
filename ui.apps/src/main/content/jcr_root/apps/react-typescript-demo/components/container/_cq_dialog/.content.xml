@@ -31,13 +31,13 @@
                                                 jcr:primaryType="nt:unstructured"
                                                 sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
                                                 fieldLabel="rows"
-                                                name="./rows"
+                                                name="./rowAmount"
                                                 required="{Boolean}true"/>
                                             <columns
                                                 jcr:primaryType="nt:unstructured"
                                                 sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
                                                 fieldLabel="columns"
-                                                name="./columns"
+                                                name="./columnAmount"
                                                 required="{Boolean}true"/>
                                         </items>
                                     </column>
