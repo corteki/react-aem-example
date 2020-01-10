@@ -3,18 +3,12 @@ import { Editable } from "../../annotations/Editable";
 import { ComponentResources } from "../ComponentResources";
 import { NavigationProperties } from "./Navigation.properties";
 import { Link } from "react-router-dom";
+import { NavigationItem } from "./NavigationItem";
 
 @Editable(ComponentResources.Navigation)
 export class Navigation extends PureComponent<NavigationProperties> {
-    getLink(item: any) {
-        if (!item || !item.url || !item.title) {
-            return;
-        }
 
-        return <Link className="nav-item" to={ item.url }>{ item.title }</Link>;
-    }
-
-    getRecursiveNavigationContent(item: any) {
+    getRecursiveNavigationContent(item: NavigationItem): any {
         if (!item || !item.url) {
             return;
         }
@@ -22,20 +16,18 @@ export class Navigation extends PureComponent<NavigationProperties> {
         let childItems;
 
         if (item.children && item.children.length) {
-            childItems = <ul>
-                { item.children && item.children.map((childItem: any) => {
+            childItems = item.children && item.children.map((childItem: NavigationItem) => {
                     return this.getRecursiveNavigationContent(childItem);
                 })
-                }</ul>;
         }
 
-        return <li key={ item.url }>
-            {this.getLink(item)}
+        return <div key={item.url}>
+            {(item?.url || item?.title) && <Link className="nav-item" to={ item.url }>{ item.title }</Link>}
             {childItems}
-        </li>;
+        </div>;
     }
+
     render() {
-        console.log(this.props)
         return (
             <nav>
                 {this.props.items.map(item => this.getRecursiveNavigationContent(item))}

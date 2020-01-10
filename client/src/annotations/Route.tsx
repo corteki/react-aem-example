@@ -6,7 +6,7 @@ import { ComponentResources } from "../components/ComponentResources";
 export function Route() {
   return (WrappedComponent:any) => MapTo(ComponentResources.Page)
     (withComponentMappingContext(
-      class extends Component {
+      class extends Component<{cqPath: string}> {
         render() {
             let routePath = this.props.cqPath;
             if (!routePath) {
