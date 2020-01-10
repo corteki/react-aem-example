@@ -1,4 +1,4 @@
-package com.tim.core.models;
+package com.tim.core.models.impl;
 
 import com.adobe.cq.export.json.ComponentExporter;
 import com.adobe.cq.export.json.ExporterConstants;

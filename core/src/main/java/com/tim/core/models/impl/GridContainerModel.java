@@ -1,4 +1,4 @@
-package com.tim.core.models;
+package com.tim.core.models.impl;
 
 import java.util.Map;
 

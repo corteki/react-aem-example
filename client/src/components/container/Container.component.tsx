@@ -1,7 +1,7 @@
 import React, {PureComponent} from "react";
 import { ComponentResources } from "../ComponentResources";
 import { ContainerProperties } from "./Container.properties";
-import { ResponsiveGrid } from "../../annotations/resource/ResponsiveGrid";
+import { ResponsiveGrid } from "../../annotations/ResponsiveGrid";
 
 @ResponsiveGrid(ComponentResources.GridContainer)
 export class Container extends PureComponent<ContainerProperties> {

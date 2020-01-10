@@ -1,4 +1,4 @@
-package com.tim.core.models;
+package com.tim.core.models.impl;
 import com.adobe.cq.export.json.ComponentExporter;
 import com.adobe.cq.export.json.ExporterConstants;
 
@@ -11,15 +11,15 @@ import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
 @Model(
     adaptables = SlingHttpServletRequest.class,
     adapters = {ComponentExporter.class},
-    resourceType = ButtonModel.RESOURCE_TYPE
+    resourceType = HeadingModel.RESOURCE_TYPE
 )
 @Exporter(
     name = ExporterConstants.SLING_MODEL_EXPORTER_NAME,
     extensions = ExporterConstants.SLING_MODEL_EXTENSION
 )
-public class ButtonModel implements ComponentExporter {
+public class HeadingModel implements ComponentExporter {
     
-    static final String RESOURCE_TYPE = "react-typescript-demo/components/button";
+    static final String RESOURCE_TYPE = "react-typescript-demo/components/heading";
 
     @ValueMapValue @Optional
     private String label;
@@ -45,5 +45,5 @@ public class ButtonModel implements ComponentExporter {
     public String getExportedType() {
         return RESOURCE_TYPE;
     }
-
+    
 }

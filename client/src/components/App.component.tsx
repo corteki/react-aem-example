@@ -1,15 +1,10 @@
 import React, {Component} from 'react';
-import { Module } from '../annotations/resource/Module';
+import { Root } from '../annotations/Root';
 import { AppProperties } from './App.properties';
 
-@Module()
+@Root()
 export class App extends Component<AppProperties> {
     render() {
-        const {children} = this.props;
-        return (
-            <section>
-                { children }
-            </section>
-        )
+        return this.props.children;
     }
 }

@@ -1,7 +1,7 @@
 import React, { PureComponent } from "react";
 import { TextProperties } from "./base/Text.properties";
 import { TextBase } from "./base/Text.component";
-import { Editable } from "../../annotations/resource/Editable";
+import { Editable } from "../../annotations/Editable";
 import { ComponentResources } from "../ComponentResources";
 import { TextConfiguration } from "./Text.configuration";
 
