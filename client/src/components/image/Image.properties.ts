@@ -1,5 +1,5 @@
 export interface ImageProperties {
-    src: string;
-    alt: string;
-    title: string;
+  src: string;
+  alt: string;
+  title: string;
 }

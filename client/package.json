@@ -18,15 +18,22 @@
     "reflect-metadata": "^0.1.13"
   },
   "devDependencies": {
+    "@babel/core": "^7.8.3",
+    "@storybook/addon-actions": "^5.3.6",
+    "@storybook/addon-links": "^5.3.6",
+    "@storybook/addons": "^5.3.6",
+    "@storybook/react": "^5.3.6",
     "@types/jest": "^24.0.24",
     "@types/react": "^16.9.17",
     "@types/react-dom": "^16.9.4",
     "@types/react-router-dom": "^5.1.3",
     "aemsync": "^4.0.0",
+    "babel-loader": "^8.0.6",
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^3.4.0",
     "html-webpack-plugin": "^3.2.0",
     "node-sass": "^4.13.0",
+    "prettier": "1.19.1",
     "sass-loader": "^8.0.0",
     "source-map-loader": "^0.2.4",
     "style-loader": "^1.1.1",
@@ -38,12 +45,14 @@
     "webpack-dev-server": "^3.10.1"
   },
   "scripts": {
-    "build": "webpack && clientlib --verbose",
+    "build": "prettier && webpack && clientlib --verbose",
     "start": "webpack-dev-server --open",
     "test": "jest --passWithNoTests",
     "deploy": "mvn -f ../pom.xml clean install -PautoInstallPackage",
     "deploy:client": "mvn clean install -PautoInstallPackage",
-    "sync": "aemsync -d -w ../ui.apps/src/main/content"
+    "sync": "aemsync -d -w ../ui.apps/src/main/content",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "keywords": [],
   "author": "",

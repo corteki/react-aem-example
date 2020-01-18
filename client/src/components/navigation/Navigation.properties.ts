@@ -1,5 +1,5 @@
-import { NavigationItem } from "./NavigationItem";
+import { NavigationItem } from './NavigationItem';
 
 export interface NavigationProperties {
-    items: Array<NavigationItem>
+  items: Array<NavigationItem>;
 }

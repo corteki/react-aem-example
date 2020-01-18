@@ -1,4 +1,4 @@
 export interface HeadingProperties {
-    label: string;
-    variant: string;
+  label: string
+  variant: string
 }

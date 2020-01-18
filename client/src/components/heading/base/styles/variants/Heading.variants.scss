@@ -1,21 +1,24 @@
-@import "skins";
-@import "structures";
+@import 'skins';
+@import 'structures';
 
 @mixin Variants {
-    &--primary {
-        @include PrimarySkin;
-        @include PrimaryStructure;
-    }
-    &--secondary {
-        @include SecondarySkin;
-        @include SecondaryStructure;
-    }
-    &--tertiary {
-        @include TertiarySkin;
-        @include TertiaryStructure;
-    }
-    &--quarternary {
-        @include QuarternarySkin;
-        @include QuarternaryStructure;
-    }
+  &--primary {
+    @include PrimarySkin;
+    @include PrimaryStructure;
+  }
+
+  &--secondary {
+    @include SecondarySkin;
+    @include SecondaryStructure;
+  }
+
+  &--tertiary {
+    @include TertiarySkin;
+    @include TertiaryStructure;
+  }
+
+  &--quarternary {
+    @include QuarternarySkin;
+    @include QuarternaryStructure;
+  }
 }

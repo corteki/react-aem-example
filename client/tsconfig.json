@@ -1,17 +1,16 @@
 {
-    "compilerOptions": {
-      "target": "es6",                          
-      "module": "commonjs",
-      "outDir": "./dist",                     
-      "removeComments": true,            
-      "jsx": "react",    
-      "strict": true,                        
-      "noImplicitAny": true,                 
-      "esModuleInterop": true,  
-      "allowJs": true,             
-      "experimentalDecorators": true,        
-      "emitDecoratorMetadata": true,        
-      "forceConsistentCasingInFileNames": true,
-    }
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "outDir": "./dist",
+    "removeComments": true,
+    "jsx": "react",
+    "strict": true,
+    "noImplicitAny": true,
+    "esModuleInterop": true,
+    "allowJs": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "forceConsistentCasingInFileNames": true,
   }
-  
+}

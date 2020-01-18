@@ -1,7 +1,7 @@
-@import "base/skin";
-@import "variants/Heading.variants";
+@import 'base/skin';
+@import 'variants/Heading.variants';
 
 .heading {
-    @include Skin;
-    @include Variants;
+  @include Skin;
+  @include Variants;
 }

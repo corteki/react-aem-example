@@ -1,10 +1,11 @@
 @import "skins";
 
 @mixin Variants {
-    &--primary {
-        @include PrimarySkin;
-    }
-    &--secondary {
-        @include SecondarySkin;
-    }
+	&--primary {
+		@include PrimarySkin;
+	}
+
+	&--secondary {
+		@include SecondarySkin;
+	}
 }

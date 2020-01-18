@@ -1,4 +1,4 @@
 export interface ComponentConfiguration<Properties> {
-    emptyLabel: string;
-    isEmpty: (props: Properties) => boolean;
+  emptyLabel: string;
+  isEmpty: (props: Properties) => boolean;
 }

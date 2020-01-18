@@ -3,7 +3,7 @@
 @import "variants/Button.variants";
 
 .button {
-    @include Skin;
-    @include Structure;
-    @include Variants;
+	@include Skin;
+	@include Structure;
+	@include Variants;
 }
